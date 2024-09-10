@@ -151,4 +151,4 @@ You can view the sample report in this repository to get an idea of what the fin
    - Additionally, the **name of the root directory must follow the date format `DD-MM-YYYY`**. The date is extracted from the root directory name and used in the report. If the directory name is not in this format, the report generation will fail or produce incorrect dates.
 
 ** Author
-- Your Name Eid Alkhaldi, PhD.
+- Eid Alkhaldi, PhD.
