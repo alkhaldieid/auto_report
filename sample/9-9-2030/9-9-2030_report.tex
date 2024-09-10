@@ -1,0 +1,215 @@
+
+\documentclass{article}
+\usepackage[a4paper,margin=2cm,top=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{arabxetex}
+\setmainfont[Script=Arabic]{Amiri}
+
+\begin{document}
+\setRL
+\renewcommand{\figurename}{الشكل}
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyhead[L]{\hspace{-2cm}\includegraphics[width=0.25\textwidth]{logo.jpg}}
+    \renewcommand{\headrulewidth}{0pt}
+}
+\pagestyle{plain}
+
+\begin{titlepage}
+    \centering
+    \includegraphics[width=1 \textwidth]{logo.jpg}
+
+    \vspace{1cm}
+    {\Huge \textbf{التقرير اليومي لمدينة الملك عبدالعزيز الرياضية}}
+
+    \vspace{0.5cm}
+    {\Large بتاريخ} 
+    {\Large 9 سبتمبر 2030}
+
+    \vspace{1cm}
+    \includegraphics[width=\textwidth]{stad.jpg}
+\end{titlepage}
+\newpage
+\renewcommand{\contentsname}{فهرس المحتويات}
+\newpage
+\tableofcontents
+\newpage
+\section{الأعمال الميكانيكية}
+\begin{figure}[H]
+    \centering
+
+    % First row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{mech/1.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{mech/2.jpg}
+    \end{minipage}
+    \vspace{0.5cm} % Vertical space between rows
+
+    % Second row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{mech/3.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{mech/4.jpg}
+    \end{minipage}
+        \caption{صور الأعمال الميكانيكية}
+\end{figure}
+
+\section{أعمال التكييف}
+\begin{figure}[H]
+    \centering
+
+    % First row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{hvac/1.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{hvac/2.jpg}
+    \end{minipage}
+    \vspace{0.5cm} % Vertical space between rows
+
+    % Second row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{hvac/3.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{hvac/4.jpg}
+    \end{minipage}
+        \caption{صور أعمال التكييف}
+\end{figure}
+
+\section{الأعمال المدنية}
+\begin{figure}[H]
+    \centering
+
+    % First row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{civil/1.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{civil/2.jpg}
+    \end{minipage}
+    \vspace{0.5cm} % Vertical space between rows
+
+    % Second row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{civil/3.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{civil/4.jpg}
+    \end{minipage}
+        \caption{صور الأعمال المدنية}
+\end{figure}
+
+\section{الأعمال الكهربائية والإليكترونية}
+\begin{figure}[H]
+    \centering
+
+    % First row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{electric/1.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{electric/2.jpg}
+    \end{minipage}
+    \vspace{0.5cm} % Vertical space between rows
+
+    % Second row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{electric/3.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{electric/4.jpg}
+    \end{minipage}
+        \caption{صور الأعمال الكهربائية والإليكترونية}
+\end{figure}
+
+\section{الأعمال الزراعية}
+\begin{figure}[H]
+    \centering
+
+    % First row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{garden/1.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{garden/2.jpg}
+    \end{minipage}
+    \vspace{0.5cm} % Vertical space between rows
+
+    % Second row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{garden/3.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{garden/4.jpg}
+    \end{minipage}
+        \caption{صور الأعمال الزراعية}
+\end{figure}
+
+\section{أعمال النظافة}
+\begin{figure}[H]
+    \centering
+
+    % First row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{cleaning/1.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{cleaning/2.jpg}
+    \end{minipage}
+    \vspace{0.5cm} % Vertical space between rows
+
+    % Second row
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{cleaning/3.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[height=9cm,width=\textwidth]{cleaning/4.jpg}
+    \end{minipage}
+        \caption{صور أعمال النظافة}
+\end{figure}
+
+\end{document}

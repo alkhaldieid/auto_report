@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}الأعمال الميكانيكية}{2}{}%
+\contentsline {section}{\numberline {2}أعمال التكييف}{3}{}%
+\contentsline {section}{\numberline {3}الأعمال المدنية}{4}{}%
+\contentsline {section}{\numberline {4}الأعمال الكهربائية والإليكترونية}{5}{}%
+\contentsline {section}{\numberline {5}الأعمال الزراعية}{6}{}%
+\contentsline {section}{\numberline {6}أعمال النظافة}{7}{}%

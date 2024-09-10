@@ -1,0 +1,154 @@
+* Daily Report Automation Tool
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/yourusername/daily-report-automation/actions)
+[![LaTeX](https://img.shields.io/badge/latex-compiled-success.svg)](https://www.latex-project.org/)
+
+This project automates the generation of a daily report consisting of images from various departments. It processes images from specified directories, generates a LaTeX-formatted report, and compiles it into a PDF. The tool can easily be customized to fit different organizational structures by changing directory names and corresponding section titles.
+
+** Features
+- Automatically counts images from predefined directories.
+- Generates a report in LaTeX format, which is compiled into a PDF.
+- Supports Arabic localization for section titles and dates.
+- Handles images in various formats such as JPG, PNG, and others.
+- Easily customizable to different organizations or report formats.
+
+** Dependencies
+The project uses the following libraries:
+- Python Standard Library (os, subprocess)
+- LaTeX (XeLaTeX, graphicx, arabxetex)
+
+** Installation
+To install the project locally:
+1. Clone this repository:
+   #+begin_src shell
+   git clone https://github.com/yourusername/daily-report-automation.git
+   cd daily-report-automation
+   #+end_src
+
+2. Ensure you have Python 3.x installed, along with LaTeX (XeLaTeX) and the necessary packages.
+
+3. Install the required fonts for Arabic support, e.g., Amiri font.
+
+** Usage
+Run the script in the directory where your images are stored. The root directory must be named in the format DD-MM-YYYY, representing the date of the report. The script will search for images in the following directories:
+- mech
+- hvac
+- civil
+- electric
+- garden
+- cleaning
+
+To generate the report:
+1. Navigate to the report folder:
+   #+begin_src shell
+   cd /path/to/report/folder
+   #+end_src
+
+2. Run the script:
+   #+begin_src python
+   python report_dev.py
+   #+end_src
+
+3. The report will be generated as a PDF file named as `DD-MM-YYYY_report.pdf`.
+
+** Customization
+You can easily customize this project to fit different needs, such as changing the names of directories or corresponding section titles in the report.
+
+1. **Changing Directories**:
+   - To process images from different directories, update the `directories` list in the `report_dev.py` file. For example:
+     #+begin_src python
+     directories = ['finance', 'marketing', 'hr', 'sales', 'it', 'operations']
+     #+end_src
+   - The script will now search for images in these new directories instead of the default ones.
+
+2. **Customizing Section Titles**:
+   - If you want to display different section titles in the LaTeX report, update the `arabic_section_names` dictionary. This dictionary maps each directory name to its corresponding section title in the report. For example:
+     #+begin_src python
+     arabic_section_names = {
+         'finance': 'قسم المالية',
+         'marketing': 'قسم التسويق',
+         'hr': 'قسم الموارد البشرية',
+         'sales': 'قسم المبيعات',
+         'it': 'قسم تكنولوجيا المعلومات',
+         'operations': 'قسم العمليات'
+     }
+     #+end_src
+   - When you run the script, the report will display these custom section titles for the corresponding directories.
+
+3. **Adding New Directories**:
+   - If you need to add more directories, simply extend the `directories` list and add the corresponding section titles to the `arabic_section_names` dictionary. For example, if you're adding a directory for "logistics", do the following:
+     #+begin_src python
+     directories.append('logistics')
+     arabic_section_names['logistics'] = 'قسم اللوجستيات'
+     #+end_src
+   - This will include the "logistics" section in the report with the new directory's images.
+
+4. **Changing Supported Image Formats**:
+   - To support additional image formats, such as GIF or BMP, modify the `image_extensions` tuple in both `count_images.py` and `report_dev.py`. For example:
+     #+begin_src python
+     image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp')
+     #+end_src
+   - The script will now process images with these file extensions.
+
+** Directory Structure
+- mech/: Mechanical images
+- hvac/: HVAC images
+- civil/: Civil engineering images
+- electric/: Electrical images
+- garden/: Gardening images
+- cleaning/: Cleaning services images
+
+** Future Enhancements
+- Support for more image formats (e.g., .tiff, .pdf).
+- A web-based interface for easy customization and usage.
+- Better error handling for missing directories or images.
+- Customizable LaTeX layout options for different sections.
+- Integration with cloud services for image storage and retrieval.
+
+** Contribution Guidelines
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any feature requests or bug reports.
+
+** License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+** Usage
+1. Customize the directories and section names in the dev_report.py file.
+2. Place images in the appropriate directories under the `sample/` folder (e.g., `sample/category1/image1.jpg`).
+3. Run the script in the directory where your data is stored:
+   #+begin_src shell
+   python report_dev.py
+   #+end_src
+4. The report will be generated as a PDF file named as `DD-MM-YYYY_report.pdf` in the current directory.
+** Demo Example
+To demonstrate how the project works, a sample directory structure has been created. This includes a folder named `9-9-2030` (representing the date of the report), containing randomly downloaded images from the internet.
+
+1. **Directory Structure**:
+   Inside the `sample/` folder, the `9-9-2030` folder contains images used to generate the report. The script reads images from predefined categories (such as mechanical, electrical, etc.) and uses these images to create the report.
+
+2. **Generating the Report**:
+   Running the `report_dev.py` script inside the `9-9-2030` directory will generate a report named `9-9-2030_report.pdf`. This report includes the images organized by sections as defined in the LaTeX template.
+
+3. **Sample Report**:
+   A sample report (`9-9-2030_report.pdf`) has been generated using this setup. It showcases how the images are formatted into LaTeX sections and compiled into a PDF file. The report was generated using the required image numbering and the root directory naming convention (`DD-MM-YYYY` format).
+
+4. **Customization**:
+   You can create a similar setup by:
+   - Creating a folder named with the date in the `DD-MM-YYYY` format.
+   - Downloading and placing images in the folder following sequential numbering (e.g., `1.jpg`, `2.jpg`, etc.).
+   - Running the script inside that folder to generate a customized report.
+
+You can view the sample report in this repository to get an idea of what the final output looks like.
+
+** Limitations
+1. **Image Numbering**:
+   - Currently, the images in each directory **must be sequentially numbered** (e.g., `1.jpg`, `2.jpg`, etc.) for the LaTeX report generation to work correctly.
+   - The script expects filenames based on numbers and corresponding image extensions. If the images are not numbered, the script will fail to find the correct images.
+   - Future improvements could involve handling arbitrary filenames, but this version requires sequential numbering.
+
+2. **Root Directory Requirements**:
+   - The script must be run from the **root directory** where the images are stored.
+   - Additionally, the **name of the root directory must follow the date format `DD-MM-YYYY`**. The date is extracted from the root directory name and used in the report. If the directory name is not in this format, the report generation will fail or produce incorrect dates.
+
+** Author
+- Your Name Eid Alkhaldi, PhD.
