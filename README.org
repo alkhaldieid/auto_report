@@ -1,8 +1,8 @@
 * Daily Report Automation Tool
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/yourusername/daily-report-automation/actions)
-[![LaTeX](https://img.shields.io/badge/latex-compiled-success.svg)](https://www.latex-project.org/)
+[[https://img.shields.io/badge/License-MIT-blue.svg][https://opensource.org/licenses/MIT]]
+[[https://img.shields.io/badge/python-3.8+-blue.svg][https://www.python.org/downloads/release/python-380/]]
+[[https://img.shields.io/badge/build-passing-brightgreen.svg][https://github.com/alkhaldieid/auto_report/actions]]
+[[https://img.shields.io/badge/latex-compiled-success.svg][https://www.latex-project.org/]]
 
 This project automates the generation of a daily report consisting of images from various departments. It processes images from specified directories, generates a LaTeX-formatted report, and compiles it into a PDF. The tool can easily be customized to fit different organizational structures by changing directory names and corresponding section titles.
 
