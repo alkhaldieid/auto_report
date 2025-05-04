@@ -1,0 +1,3 @@
+[submodule "daily_classifier"]
+	path = daily_classifier
+	url = git@github.com:alkhaldieid/daily_classifier.git
