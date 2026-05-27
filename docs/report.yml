@@ -1,0 +1,40 @@
+preset: general
+direction: ltr
+font_name: "Latin Modern Roman"
+font_options:
+contents_name: Contents
+figure_name: Figure
+image_caption_template: "Photos: {section_title}"
+output_dir: reports
+
+title_page:
+  enabled: true
+  title: "{mode_title}"
+  subtitle: "{mode_subtitle}"
+  logo_path: assets/logo.png
+  cover_path: assets/cover.jpg
+
+modes:
+  daily:
+    title: "Daily Site Photo Report"
+    subtitle: "{date_en}"
+    output_filename: "{input_name}_daily_report"
+    section_heading: section
+  monthly:
+    title: "Monthly Site Photo Report"
+    subtitle: "{period_label}"
+    output_filename: "{input_name}_monthly_report"
+    section_heading: section
+  generic:
+    title: "Project Photo Report"
+    subtitle: "North Site Inspection"
+    output_filename: "north-site-photo-report"
+    section_heading: section
+
+sections:
+  - folder: before
+    title: Before Photos
+  - folder: after
+    title: After Photos
+  - folder: issues
+    title: Open Issues

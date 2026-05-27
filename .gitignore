@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local tooling
+.venv/
+.venv*/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# LaTeX build outputs
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Generated reports
+reports/
+*_report.tex
+*_report.pdf
+*_monthly_report.tex
+*_monthly_report.pdf
+!sample/9-9-2030/9-9-2030_report.pdf
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/

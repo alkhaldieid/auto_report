@@ -1,0 +1,43 @@
+preset: arabic-facility
+
+# This is the built-in preset used by the sample project.
+# It is shown here so the original facility-management workflow is explicit.
+direction: rtl
+font_name: Amiri
+font_options: Script=Arabic
+contents_name: فهرس المحتويات
+figure_name: الشكل
+image_caption_template: "صور {section_title}"
+
+title_page:
+  enabled: true
+  title: "{mode_title}"
+  subtitle: "{mode_subtitle}"
+  logo_path: logo.jpg
+  cover_path: stad.jpg
+
+modes:
+  daily:
+    title: التقرير اليومي لمدينة الملك عبدالعزيز الرياضية
+    subtitle: "بتاريخ {date_ar}"
+    output_filename: "{input_name}_report"
+  monthly:
+    title: التقرير الشهري لمدينة الملك عبدالعزيز الرياضية
+    subtitle: "{period_label}"
+    output_filename: "{input_name}_monthly_report"
+    content_section_title: الصور الفوتوغرافية مع الوصف
+    section_heading: subsection
+
+sections:
+  - folder: mech
+    title: الأعمال الميكانيكية
+  - folder: hvac
+    title: أعمال التكييف
+  - folder: civil
+    title: الأعمال المدنية
+  - folder: electric
+    title: الأعمال الكهربائية والإليكترونية
+  - folder: garden
+    title: الأعمال الزراعية
+  - folder: cleaning
+    title: أعمال النظافة
